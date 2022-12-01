@@ -91,7 +91,19 @@ body {
 #check {
   display: none;
 }
+
 /* Här slutar stylekoden för header */
+
+
+main {
+  width: 90%;
+  margin-left: auto;
+  margin-right: auto;
+  margin-top: 13rem;
+  border: 1px solid red;
+}
+
+/* Här börjar stylekoden för hero/Hem delen */
 
 
 
