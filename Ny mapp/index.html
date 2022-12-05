@@ -23,11 +23,12 @@
         <i class="fas fa-bars"></i>
       </label>
       <ul>
-        <li><a href="#">Hem</a></li>
-        <li><a href="#">Om oss</a></li>
-        <li><a href="#">priser</a></li>
+        <li><a href="#home">Hem</a></li>
+        <li><a href="#">Aktuell</a></li>
+        <li><a href="#about">Om oss</a></li>
+        <li><a href="#price">priser</a></li>
         <li><a href="#">Boka nu</a></li>
-        <li><a href="#">kontakt</a></li>
+        <li><a href="#contact">kontakt</a></li>
       </ul>
     </nav>
 
@@ -70,7 +71,7 @@
         </div>
         <div class="aboutcontainer__text">
           <p>Karlstad Congress Culture Center slog upp portarna i januari 2011 och är en av Nordens största och modernaste evenemangslokaler med 18 mötesrum, restaurang, reception och konferenstjänster fördelade på 18 000 m2 mötesyta. Karlstad CCC drivs av Visit Karlstad AB, som ägs av Karlstads kommun (49 %) och näringslivet (51 %).</p>
-          <a href="#" class="aboutcontainer__button">Kontakta oss</a>
+          <a href="#contact" class="aboutcontainer__button">Kontakta oss</a>
 
         </div>
 
@@ -78,7 +79,136 @@
 
     </section>
 
+    <!-- Här slutar Om oss delen -->
+
+    <!-- Här börjar pris delen -->
+
+    <section class="price" id="price">
+
+      <h2 class="price__heading"> <span>Vår</span> prisplaner </h2>
+
+      <div class="pricecontainer">
+
+        <div class="pricecontainer__box">
+          <h3 class="title">Bronze</h3>
+          <h3 class="amount">300 KR</h3>
+          <ul>
+            <li><i class="fas fa-check"></i>2 valfria seminarier</li>
+            <li><i class="fas fa-check"></i></li>
+            <li><i class="fas fa-check"></i></li>
+            <li><i class="fas fa-check"></i></li>
+          </ul>
+          <a href="#" class="pricecontainer__box__btn">Välj</a>
+        </div>
+
+        <div class="pricecontainer__box">
+          <h3 class="title">silver</h3>
+          <h3 class="amount">600 KR</h3>
+          <ul>
+            <li><i class="fas fa-check"></i>5 valfria seminarier</li>
+            <li><i class="fas fa-check"></i>Gratis bussbiljet i Karlstad</li>
+            <li><i class="fas fa-check"></i></li>
+            <li><i class="fas fa-check"></i></li>
+          </ul>
+          <a href="#" class="pricecontainer__box__btn">Välj</a>
+        </div>
+
+        <div class="pricecontainer__box">
+          <h3 class="title">Guld</h3>
+          <h3 class="amount">1100 KR</h3>
+          <ul>
+            <li><i class="fas fa-check"></i>10 seminarier</li>
+            <li><i class="fas fa-check"></i>Gratis bussbiljet i Karlstad</li>
+            <li><i class="fas fa-check"></i> Matbuffet ingår</li>
+            <li><i class="fas fa-check"></i></li>
+          </ul>
+          <a href="#" class="pricecontainer__box__btn">Välj</a>
+        </div>
+
+        <div class="pricecontainer__box">
+          <h3 class="title">Dagspass</h3>
+          <h3 class="amount">500 KR</h3>
+          <ul>
+            <li><i class="fas fa-check"></i>Ingång till alla seminarier under 1 dag</li>
+            <li><i class="fas fa-check"></i></li>
+            <li><i class="fas fa-check"></i></li>
+            <li><i class="fas fa-check"></i></li>
+          </ul>
+          <a href="#" class="pricecontainer__box__btn">Välj</a>
+        </div>
+
+      </div>
+
+    </section>
+
+    <!-- Här slutar koden för pris delen -->
+
+    <!-- Här börjar kontakt delen -->
+
+    <section class="contact" id="contact">
+
+      <h2 class="contact__heading"> Kontakta <span>Oss</span></h2>
+
+      <form action="">
+
+        <div class="inputbox">
+        <input type="text" placeholder="*namn" required>
+        <input type="email" placeholder="*email" required>
+        </div>
+
+        <div class="inputbox">
+          <input type="tel" placeholder="mobilnummer">
+          <input type="text" placeholder="ämne">
+        </div>
+        <textarea name="" placeholder="*din meddelande" required id="" cols="30" rows="10"></textarea>
+        <button>Skicka</button>
+
+      </form>
+
+    </section>
+
+    <!-- Här slutar koden för kontakt delen -->
+
+
   </main>
+  <!-- Här slutar koden för main delen -->
+
+  <!-- Här börjar koden för footern -->
+
+  <footer>
+
+    <div class="boxcontainer">
+
+      <div class="boxcontainer__box">
+        <h3>adress</h3>
+        <a href="#"> <i class="fas fa-map-marker-alt"></i> Tage Erlandergatan 8, 652 20 Karlstad </a>
+      </div>
+
+      <div class="boxcontainer__box">
+        <a href="#home"> <i class="fas fa-arrow-right"></i> Hem </a>
+        <a href="#"> <i class="fas fa-arrow-right"></i> Aktuell </a>
+        <a href="#about"> <i class="fas fa-arrow-right"></i> Om oss </a>
+        <a href="#price"> <i class="fas fa-arrow-right"></i> priser </a>
+        <a href="#"> <i class="fas fa-arrow-right"></i> Boka nu </a>
+        <a href="#contact"> <i class="fas fa-arrow-right"></i> Kontakt </a>
+      </div>
+
+      <div class="boxcontainer__box">
+        <h3>Följ Oss</h3>
+        <a href="#"> <i class="fab fa-facebook-f"></i> Facebook </a>
+        <a href="#"> <i class="fab fa-twitter"></i> Twitter </a>
+        <a href="#"> <i class="fab fa-instagram"></i> Instagram </a>
+      </div>
+
+    </div>
+
+    <div class="credit"> Copyright Kccc AB 2022</div>
+
+
+  </footer>
+
+  <!-- Här slutar koden för footern -->
+
 
   
 </body>

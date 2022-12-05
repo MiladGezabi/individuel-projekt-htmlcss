@@ -102,20 +102,21 @@ h1 {
 main {
   display: flex;
   flex-direction: column;
-  align-items: center;
+  /* align-items: center; */
   width: 90%;
-  height: 100vh;
+  /* height: 100vh;  */
   margin-left: auto;
   margin-right: auto;
   padding-top: 13rem;
   /* overflow-x: hidden; */
-  border: 1px solid red;
 }
 
 /* Här börjar stylekoden för hero/Hem delen */
 
 .home {
   margin-top: 15rem;
+  display: flex;
+  justify-content: center;
 }
 
 h2 {
@@ -145,7 +146,7 @@ h2 .slogan__span {
   100% {
     transform: perspective(1000px) rotateY(360deg);
   }
-}
+ }
 
 .slider span {
   position: absolute;
@@ -229,10 +230,206 @@ h2 .slogan__span {
   border-radius: .5rem;
 }
 
-.aboutcontainer__button:hover,:active {
+.aboutcontainer__button:hover {
   font-size: 1.9rem;
 }
 
+/* Här slutar skylekoden för Om oss delen */
+
+/* Här börjar stylekoden för Pris delen */
+
+.price {
+  margin-top: 10rem;
+}
+
+.price__heading {
+  padding: 2rem 0;
+}
+
+.price__heading span {
+  color: var(--main-color);
+}
+
+.price .pricecontainer {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(25rem, 1fr));
+  gap: 1.5rem;
+}
+
+.pricecontainer__box {
+  padding: 2rem 0;
+  background: #333;
+  border-radius: .5rem;
+  text-align: center;
+}
+
+.pricecontainer__box:hover {
+  transform: scale(1.03);
+}
+
+.pricecontainer__box .title {
+  background: var(--main-color);
+  color: #fff;
+  padding: 1.5rem 0;
+  font-size: 2rem;
+}
+
+.pricecontainer__box .amount {
+  color: #fff;
+  padding-top: 2rem;
+  font-size: 4rem;
+}
+
+.pricecontainer__box ul {
+  list-style-type: none;
+  padding: 1rem 0;
+}
+
+.pricecontainer__box ul li {
+  font-size: 1.5rem;
+  color: #eee;
+  padding: 1rem 0;
+}
+
+.pricecontainer__box ul li i {
+  color: var(--main-color);
+  padding-right: 0.5rem;
+}
+
+.pricecontainer__box__btn {
+  font-size: 2rem;
+  background-color: #222;
+  color: #eee;
+  padding: 1rem 3rem;
+  border-radius: .5rem;
+}
+
+.pricecontainer__box__btn:hover {
+  color: var(--main-color);
+}
+
+/* Här slutar stylekoden för pris delen */
+
+/* Här börja stylekoden för kontakt delen */
+
+.contact {
+  margin-top: 10rem;
+}
+
+.contact__heading span {
+  color: var(--main-color);
+}
+
+.contact form {
+  max-width: 70rem;
+  margin: 1rem auto;
+  text-align: center;
+}
+
+.contact form .inputbox {
+  display: flex;
+  justify-content: space-between;
+  flex-wrap: wrap;
+}
+
+.contact form .inputbox input,
+.contact form textarea {
+  width: 100%;
+  background: #333;
+  border-radius: 0.5rem;
+  padding: 1rem;
+  margin: 0.7rem 0;
+  font-size: 1.5rem;
+  color: #fff;
+  text-transform: none;
+  border: none;
+}
+
+.contact form .inputbox input::placeholder,
+.contact form textarea::placeholder {
+  color: #eee;
+  text-transform: capitalize;
+}
+
+.contact form .inputbox input:focus,
+.contact form textarea:focus {
+  background: #444;
+}
+
+.contact form .inputbox input {
+  width: 49%;
+}
+
+.contact form textarea {
+  resize: none;
+}
+
+.contact button {
+  font-size: 2rem;
+  font-weight: bolder;
+  background: #444;
+  color: #eee;
+  padding: 1rem 2rem;
+  border: none;
+  border-radius: 0.5rem;
+  cursor: pointer;
+  transition: all .2s;
+}
+
+.contact button:hover {
+  color: var(--main-color);
+  transform: scale(0.97);
+}
+
+/* Här slutar stylekoden för kontakt delen */
+
+/* Här börjar stylekoden för footern */
+
+footer {
+  background: #111;
+  padding: 0 2rem;
+}
+
+footer .boxcontainer {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(25rem, 1fr));
+  gap: 1.5rem;
+}
+
+.boxcontainer__box h3 {
+  font-size: 2.5rem;
+  padding: 1rem 0;
+  color: #fff;
+}
+
+.boxcontainer__box a {
+  display: block;
+  font-size: 1.5rem;
+  padding: 1rem 0;
+  color: #eee;
+}
+
+.boxcontainer__box a i {
+  padding-right: 0.5rem;
+  color: var(--main-color);
+}
+
+.boxcontainer__box a:hover i {
+  padding-right: 1.5rem;
+  color: #fff;
+}
+
+footer .credit {
+  text-align: center;
+  border-top: 0.1rem solid #222;
+  color: #fff;
+  padding: 2rem;
+  padding-top: 2.5rem;
+  margin-top: 1rem;
+  font-size: 2rem;
+}
+
+/* Här slutar stylkoden för footern */
 
 
 
@@ -323,6 +520,10 @@ h2 .slogan__span {
   }
 
 /* Här slutar stylekod(max-width:877px) för hero/hem */
+
+.contact form .inputbox input {
+  width: 100%;
+}
 
   
 }
