@@ -176,6 +176,68 @@ h2 .slogan__span {
 
 /* Här slutar stylekoden för hero/hem delen */
 
+/* Här börjar stylekoden för aktuell delen */
+
+.topical {
+  /* display: flex; */
+  flex-direction: column;
+  align-items: center;
+  text-align: center;
+  margin-top: 15rem;
+}
+
+.topical__heading {
+  font-size: 3.5rem;
+  color: #eee;
+  padding: 1rem 0;
+}
+
+.topical__heading span {
+  color: var(--main-color);
+}
+
+.topical h3 {
+  font-size: 3rem;
+  color: #eee;
+  padding: 4rem 0;
+}
+
+.topical h3 span {
+  color: var(--main-color);
+}
+
+.topical__container {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(25rem, 1fr));
+  gap: 1.5rem;
+}
+
+.topical__box {
+  padding: 2rem 0;
+  background: #333;
+  border-radius: .5rem;
+  text-align: center;
+}
+
+.topical__box .title {
+  background: var(--main-color);
+  color: #fff;
+  padding: 1.5rem 0;
+  font-size: 2rem;
+}
+
+.topical__box p {
+  font-size: 1.5rem;
+  color: #eee;
+  padding: 1rem 0;
+}
+
+.topical__box p span {
+  font-weight: bolder;
+}
+
+/* Här slutar stylekoden för aktuell delen */
+
 /* Här börja stylekoden för om oss delen */
 
 .about {
