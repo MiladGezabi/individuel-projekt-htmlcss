@@ -102,13 +102,10 @@ h1 {
 main {
   display: flex;
   flex-direction: column;
-  /* align-items: center; */
   width: 90%;
-  /* height: 100vh;  */
   margin-left: auto;
   margin-right: auto;
   padding-top: 13rem;
-  /* overflow-x: hidden; */
 }
 
 /* Här börjar stylekoden för hero/Hem delen */
