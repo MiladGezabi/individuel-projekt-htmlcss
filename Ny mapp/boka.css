@@ -42,7 +42,7 @@
 }
 
 .registration form .inputbox input:invalid {
-  border: 1px solid red;
+  border-right: 4px solid red;
 }
 
 .registration form .inputbox input::placeholder,
