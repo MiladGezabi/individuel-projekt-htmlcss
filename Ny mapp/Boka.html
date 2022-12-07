@@ -8,6 +8,7 @@
   <meta name="robots" content="index,follow">
   <link rel="stylesheet" href="style.css">
   <link rel="stylesheet" href="variable.css">
+  <link rel="stylesheet" href="boka.css">
   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.1/css/all.min.css">
   <title>Karlstad CCC</title>
 </head>
@@ -39,6 +40,59 @@
   <!-- Här börjar koden för main -->
 
   <main>
+
+    <section class="registration">
+
+      <h2 class="registration__heading">Boka <span>nu</span></h2>
+
+      <form action="">
+
+        <div class="inputbox">
+          <input type="text" placeholder="*Namn" required title="Var vänlig och fyll i rutan">
+          <input type="email" placeholder="*Email" required title="Var vänlig och fyll i rutan">
+        </div>
+
+        <div class="inputbox">
+          <input type="text" placeholder="Postnummer">
+          <input type="text" placeholder="Adress">
+        </div>
+
+        <div class="inputbox__radio">
+          <h3>*Välj ett prisplan</h3>
+          <input id="bronze" type="radio" name="price">
+          <label for="bronze">Bronze</label>
+          <input id="silver" type="radio" name="price">
+          <label for="silver">Silver</label>
+          <input type="radio" id="gold" name="price">
+          <label for="gold">Guld</label>
+          <input id="daypass" type="radio" name="price">
+          <label for="daypass">Dagspass</label>
+        </div>
+
+        <div class="inputbox__radio">
+          <h3>Var vänling och välj en dag om du har valt Dagspass</h3>
+          <input id="day1" type="radio" name="days">
+          <label for="day1">9/12</label>
+          <input type="radio" name="days" id="day2">
+          <label for="day2">10/12</label>
+          <input type="radio" name="days" id="day3">
+          <label for="day3">11/12</label>
+        </div>
+
+        <div class="inputbox__checkbox">
+          <label for="food">Lägg till vår fantastiska Buffe <span>(Du behöver inte lägga till det här om du har valt Guld)</span></label>
+          <input type="checkbox" id="food">
+        </div>
+
+        <textarea placeholder="Har du några allergier?" cols="30" rows="10"></textarea>
+
+        <p>OBS! Allt med * måste fyllas innan du går vidare</p>
+
+        <button>Boka</button>
+
+      </form>
+
+    </section>
 
   </main>
 
